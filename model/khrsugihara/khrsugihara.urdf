@@ -195,13 +195,16 @@
     <visual>
       <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK2_mesh.dae" scale="1 1 1" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/force_foot_KHR_wheel_heel.STL" scale="0.001 0.001 0.001" />
       </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK2_mesh.dae" scale="1 1 1" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/force_foot_KHR_wheel_heel.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -210,44 +213,63 @@
       <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
     </inertial>
   </link>
-  <link name="LLEG_LINK3">
-    <visual>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK3_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK3_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.059469" />
-      <origin xyz="-2.60209e-18 0.02 -0.032159" rpy="0 -0 0"/>
-      <inertia ixx="0.000347" ixy="-4.27652e-10" ixz="4.33505e-10" iyy="0.000356" iyz="2.22978e-08" izz="4.58682e-05"/>
-    </inertial>
-  </link>
-  <link name="LLEG_LINK4">
-    <visual>
-      <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK4_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK4_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.213343" />
-      <origin xyz="-0.021444 0.02195 -0.045234" rpy="0 -0 0"/>
-      <inertia ixx="0.001683" ixy="4.66768e-06" ixz="-1.05097e-06" iyy="0.000929" iyz="5.95932e-07" izz="0.001039"/>
-    </inertial>
-  </link>
+  <!-- <link name="LLEG_LINK2"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK2_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK2_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.059469" /> -->
+  <!--     <origin xyz="0.005048 0.02 -0.042868" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
+  <!-- <link name="LLEG_LINK3"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK3_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK3_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.059469" /> -->
+  <!--     <origin xyz="-2.60209e-18 0.02 -0.032159" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.000347" ixy="-4.27652e-10" ixz="4.33505e-10" iyy="0.000356" iyz="2.22978e-08" izz="4.58682e-05"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
+  <!-- <link name="LLEG_LINK4"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK4_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK4_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.213343" /> -->
+  <!--     <origin xyz="-0.021444 0.02195 -0.045234" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.001683" ixy="4.66768e-06" ixz="-1.05097e-06" iyy="0.000929" iyz="5.95932e-07" izz="0.001039"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
   <link name="RARM_LINK0">
     <visual>
       <origin xyz="0.0115 -0.049 0.0474" rpy="0 -0 0"/>
@@ -400,63 +422,63 @@
       <inertia ixx="6.66048e-05" ixy="3.53549e-22" ixz="-1.97268e-23" iyy="0.000102" iyz="1.65264e-20" izz="6.47859e-05"/>
     </inertial>
   </link>
-  <link name="RLEG_LINK2">
-    <visual>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK2_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK2_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.059469" />
-      <origin xyz="0.005048 -0.02 -0.042868" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
-    </inertial>
-  </link>
-  <link name="RLEG_LINK3">
-    <visual>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK3_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.065" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK3_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.059469" />
-      <origin xyz="-1.73472e-18 -0.02 -0.032159" rpy="0 -0 0"/>
-      <inertia ixx="0.000347" ixy="-4.27652e-10" ixz="4.33505e-10" iyy="0.000356" iyz="2.22978e-08" izz="4.58682e-05"/>
-    </inertial>
-  </link>
-  <link name="RLEG_LINK4">
-    <visual>
-      <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK4_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK4_mesh.dae" scale="1 1 1" />
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.213343" />
-      <origin xyz="-0.021444 -0.02195 -0.045234" rpy="0 -0 0"/>
-      <inertia ixx="0.001683" ixy="4.66768e-06" ixz="1.05097e-06" iyy="0.000929" iyz="-5.95932e-07" izz="0.001039"/>
-    </inertial>
-  </link>
+  <!-- <link name="RLEG_LINK2"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK2_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK2_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.059469" /> -->
+  <!--     <origin xyz="0.005048 -0.02 -0.042868" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
+  <!-- <link name="RLEG_LINK3"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK3_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0 0 -0.065" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK3_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.059469" /> -->
+  <!--     <origin xyz="-1.73472e-18 -0.02 -0.032159" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.000347" ixy="-4.27652e-10" ixz="4.33505e-10" iyy="0.000356" iyz="2.22978e-08" izz="4.58682e-05"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
+  <!-- <link name="RLEG_LINK4"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK4_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK4_mesh.dae" scale="1 1 1" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="0.213343" /> -->
+  <!--     <origin xyz="-0.021444 -0.02195 -0.045234" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.001683" ixy="4.66768e-06" ixz="1.05097e-06" iyy="0.000929" iyz="-5.95932e-07" izz="0.001039"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
   <joint name="HEAD_JOINT0" type="continuous">
     <parent link="bodyset93922848311048"/>
     <child  link="HEAD_LINK0"/>
@@ -537,22 +559,22 @@
     <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
     <dynamics damping="0.2" friction="0" />
   </joint>
-  <joint name="LLEG_JOINT3" type="continuous">
-    <parent link="LLEG_LINK2"/>
-    <child  link="LLEG_LINK3"/>
-    <origin xyz="0 0 -0.065" rpy="0 -0 0 "/>
-    <axis   xyz="0 1 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
-  <joint name="LLEG_JOINT4" type="continuous">
-    <parent link="LLEG_LINK3"/>
-    <child  link="LLEG_LINK4"/>
-    <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0 "/>
-    <axis   xyz="1 0 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
+  <!-- <joint name="LLEG_JOINT3" type="continuous"> -->
+  <!--   <parent link="LLEG_LINK2"/> -->
+  <!--   <child  link="LLEG_LINK3"/> -->
+  <!--   <origin xyz="0 0 -0.065" rpy="0 -0 0 "/> -->
+  <!--   <axis   xyz="0 1 0"/> -->
+  <!--   <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" /> -->
+  <!--   <dynamics damping="0.2" friction="0" /> -->
+  <!-- </joint> -->
+  <!-- <joint name="LLEG_JOINT4" type="continuous"> -->
+  <!--   <parent link="LLEG_LINK3"/> -->
+  <!--   <child  link="LLEG_LINK4"/> -->
+  <!--   <origin xyz="0.0197 0.00825 -0.0385" rpy="0 -0 0 "/> -->
+  <!--   <axis   xyz="1 0 0"/> -->
+  <!--   <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" /> -->
+  <!--   <dynamics damping="0.2" friction="0" /> -->
+  <!-- </joint> -->
   <joint name="RARM_JOINT0" type="continuous">
     <parent link="bodyset93922848311048"/>
     <child  link="RARM_LINK0"/>
@@ -617,28 +639,28 @@
     <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
     <dynamics damping="0.2" friction="0" />
   </joint>
-  <joint name="RLEG_JOINT2" type="continuous">
-    <parent link="RLEG_LINK1"/>
-    <child  link="RLEG_LINK2"/>
-    <origin xyz="0 0 -0.065" rpy="0 -0 0 "/>
-    <axis   xyz="0 1 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
-  <joint name="RLEG_JOINT3" type="continuous">
-    <parent link="RLEG_LINK2"/>
-    <child  link="RLEG_LINK3"/>
-    <origin xyz="0 0 -0.065" rpy="0 -0 0 "/>
-    <axis   xyz="0 1 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
-  <joint name="RLEG_JOINT4" type="continuous">
-    <parent link="RLEG_LINK3"/>
-    <child  link="RLEG_LINK4"/>
-    <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0 "/>
-    <axis   xyz="1 0 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
+  <!-- <joint name="RLEG_JOINT2" type="continuous"> -->
+  <!--   <parent link="RLEG_LINK1"/> -->
+  <!--   <child  link="RLEG_LINK2"/> -->
+  <!--   <origin xyz="0 0 -0.065" rpy="0 -0 0 "/> -->
+  <!--   <axis   xyz="0 1 0"/> -->
+  <!--   <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" /> -->
+  <!--   <dynamics damping="0.2" friction="0" /> -->
+  <!-- </joint> -->
+  <!-- <joint name="RLEG_JOINT3" type="continuous"> -->
+  <!--   <parent link="RLEG_LINK2"/> -->
+  <!--   <child  link="RLEG_LINK3"/> -->
+  <!--   <origin xyz="0 0 -0.065" rpy="0 -0 0 "/> -->
+  <!--   <axis   xyz="0 1 0"/> -->
+  <!--   <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" /> -->
+  <!--   <dynamics damping="0.2" friction="0" /> -->
+  <!-- </joint> -->
+  <!-- <joint name="RLEG_JOINT4" type="continuous"> -->
+  <!--   <parent link="RLEG_LINK3"/> -->
+  <!--   <child  link="RLEG_LINK4"/> -->
+  <!--   <origin xyz="0.0197 -0.00825 -0.0385" rpy="0 -0 0 "/> -->
+  <!--   <axis   xyz="1 0 0"/> -->
+  <!--   <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" /> -->
+  <!--   <dynamics damping="0.2" friction="0" /> -->
+  <!-- </joint> -->
 </robot>

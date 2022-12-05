@@ -232,7 +232,7 @@
     <inertial>
       <mass value="0.025" />
       <origin xyz="0 0 0" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="6.69e-6" ixy="0" ixz="0" iyy="1.293e-5" iyz="0" izz="6.69e-6"/>
     </inertial>
   </link>
   <link name="LLEG_LINK_WHEEL2">
@@ -254,7 +254,7 @@
     <inertial>
       <mass value="0.025" />
       <origin xyz="0 0 0" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="6.69e-6" ixy="0" ixz="0" iyy="1.293e-5" iyz="0" izz="6.69e-6"/>
     </inertial>
   </link>
   <link name="RARM_LINK0">
@@ -450,7 +450,7 @@
     <inertial>
       <mass value="0.025" />
       <origin xyz="0 0 0" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="6.69e-6" ixy="0" ixz="0" iyy="1.293e-5" iyz="0" izz="6.69e-6"/>
     </inertial>
   </link>
   <link name="RLEG_LINK_WHEEL2">
@@ -472,7 +472,7 @@
     <inertial>
       <mass value="0.025" />
       <origin xyz="0 0 0" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="6.69e-6" ixy="0" ixz="0" iyy="1.293e-5" iyz="0" izz="6.69e-6"/>
     </inertial>
   </link>
   <joint name="HEAD_JOINT0" type="continuous">

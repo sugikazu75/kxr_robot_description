@@ -20,6 +20,30 @@
       <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/>
     </inertial>
   </link>
+
+  <link name="BIROTOR_UNIT">
+    <visual>
+      <origin xyz="-0.072 0 0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.072 0 0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.4" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/>
+    </inertial>
+  </link>
+
   <link name="HEAD_LINK0">
     <visual>
       <origin xyz="0.0115 0 0.064" rpy="0 -0 0"/>
@@ -208,9 +232,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="0.059469" />
+      <mass value="0.23"/>
       <origin xyz="0.005048 0.02 -0.042868" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="0.00058" ixy="-0.00032" ixz="0.00026" iyy="0.00093" iyz="-0.00024" izz="0.00103"/>
     </inertial>
   </link>
   <link name="LLEG_LINK_WHEEL1">
@@ -426,9 +450,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="0.059469" />
+      <mass value="0.23" />
       <origin xyz="0.005048 -0.02 -0.042868" rpy="0 -0 0"/>
-      <inertia ixx="0.000209" ixy="-4.27652e-10" ixz="-4.35972e-07" iyy="0.000217" iyz="2.22978e-08" izz="4.54988e-05"/>
+      <inertia ixx="0.00058" ixy="0.00032" ixz="0.00026" iyy="0.00093" iyz="0.00024" izz="0.00103"/>
     </inertial>
   </link>
   <link name="RLEG_LINK_WHEEL1">
@@ -483,6 +507,13 @@
     <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
     <dynamics damping="0.2" friction="0" />
   </joint>
+
+  <joint name="BIROTOR_UNIT_JOINT" type="fixed">
+    <parent link="BASE_LINK"/>
+    <child  link="BIROTOR_UNIT"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+  </joint>
+
   <joint name="LARM_JOINT0" type="continuous">
     <parent link="BASE_LINK"/>
     <child  link="LARM_LINK0"/>

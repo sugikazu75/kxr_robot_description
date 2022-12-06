@@ -21,20 +21,43 @@
     </inertial>
   </link>
 
-  <link name="BIROTOR_UNIT">
+  <!-- <link name="BIROTOR_UNIT"> -->
+  <!--   <visual> -->
+  <!--     <origin xyz="-0.0155 0 0.005" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" /> -->
+  <!--     </geometry> -->
+  <!--     <material name="white"> -->
+  <!--       <color rgba="1.0 1.0 1.0 1.0"/> -->
+  <!--     </material> -->
+  <!--   </visual> -->
+  <!--   <collision> -->
+  <!--     <origin xyz="-0.0155 0 0.005" rpy="0 -0 0"/> -->
+  <!--     <geometry> -->
+  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" /> -->
+  <!--     </geometry> -->
+  <!--   </collision> -->
+  <!--   <inertial> -->
+  <!--     <mass value="1.4" /> -->
+  <!--     <origin xyz="0 0 0" rpy="0 -0 0"/> -->
+  <!--     <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/> -->
+  <!--   </inertial> -->
+  <!-- </link> -->
+
+  <link name="DOCKING_PIPE">
     <visual>
-      <origin xyz="-0.0155 0 0.005" rpy="0 -0 0"/>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_backpack.STL" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="white">
         <color rgba="1.0 1.0 1.0 1.0"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.0155 0 0.005" rpy="0 -0 0"/>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_khr.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_backpack.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -44,51 +67,28 @@
     </inertial>
   </link>
 
-  <!-- <link name="DOCKING_PIPE"> -->
-  <!--   <visual> -->
-  <!--     <origin xyz="0 0 0" rpy="0 -0 0"/> -->
-  <!--     <geometry> -->
-  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_backpack.STL" scale="0.001 0.001 0.001" /> -->
-  <!--     </geometry> -->
-  <!--     <material name="white"> -->
-  <!--       <color rgba="1.0 1.0 1.0 1.0"/> -->
-  <!--     </material> -->
-  <!--   </visual> -->
-  <!--   <collision> -->
-  <!--     <origin xyz="0 0 0" rpy="0 -0 0"/> -->
-  <!--     <geometry> -->
-  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_backpack.STL" scale="0.001 0.001 0.001" /> -->
-  <!--     </geometry> -->
-  <!--   </collision> -->
-  <!--   <inertial> -->
-  <!--     <mass value="1.4" /> -->
-  <!--     <origin xyz="0 0 0" rpy="0 -0 0"/> -->
-  <!--     <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/> -->
-  <!--   </inertial> -->
-  <!-- </link> -->
-
-  <!-- <link name="TRIROTOR_UNIT"> -->
-  <!--   <visual> -->
-  <!--     <origin xyz="0.0905 0 0.120" rpy="0 -0 0"/> -->
-  <!--     <geometry> -->
-  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" /> -->
-  <!--     </geometry> -->
-  <!--     <material name="white"> -->
-  <!--       <color rgba="1.0 1.0 1.0 1.0"/> -->
-  <!--     </material> -->
-  <!--   </visual> -->
-  <!--   <collision> -->
-  <!--     <origin xyz="0.0905 0 0.120" rpy="0 -0 0"/> -->
-  <!--     <geometry> -->
-  <!--       <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" /> -->
-  <!--     </geometry> -->
-  <!--   </collision> -->
-  <!--   <inertial> -->
-  <!--     <mass value="1.4" /> -->
-  <!--     <origin xyz="0 0 0" rpy="0 -0 0"/> -->
-  <!--     <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/> -->
-  <!--   </inertial> -->
-  <!-- </link> -->
+  <link name="TRIROTOR_UNIT">
+    <visual>
+      <origin xyz="0.0905 0 0.120" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0905 0 0.120" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.4" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.002091" ixy="3.87489e-05" ixz="-9.33077e-07" iyy="0.002015" iyz="-7.26528e-06" izz="0.001643"/>
+    </inertial>
+  </link>
 
   <link name="HEAD_LINK0">
     <visual>
@@ -554,23 +554,27 @@
     <dynamics damping="0.2" friction="0" />
   </joint>
 
-  <joint name="BIROTOR_UNIT_JOINT" type="fixed">
-    <parent link="BASE_LINK"/>
-    <child  link="BIROTOR_UNIT"/>
-    <origin xyz="-0.0565 0 0.040" rpy="0 -0 0 "/>
-  </joint>
-
-  <!-- <joint name="DOCKING_PIPE_JOINT" type="fixed"> -->
+  <!-- <joint name="BIROTOR_UNIT_JOINT" type="fixed"> -->
   <!--   <parent link="BASE_LINK"/> -->
-  <!--   <child  link="DOCKING_PIPE"/> -->
+  <!--   <child  link="BIROTOR_UNIT"/> -->
   <!--   <origin xyz="-0.0565 0 0.040" rpy="0 -0 0 "/> -->
   <!-- </joint> -->
 
-  <!-- <joint name="TRIROTOR_UNIT_JOINT" type="fixed"> -->
-  <!--   <parent link="DOCKING_PIPE"/> -->
-  <!--   <child  link="TRIROTOR_UNIT"/> -->
-  <!--   <origin xyz="-0.045 0 0.083" rpy="0 -0 0 "/> -->
-  <!-- </joint> -->
+  <joint name="DOCKING_PIPE_JOINT" type="continuous">
+    <parent link="BASE_LINK"/>
+    <child  link="DOCKING_PIPE"/>
+    <origin xyz="-0.0565 0 0.040" rpy="0 -0 0 "/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <joint name="TRIROTOR_UNIT_JOINT" type="continuous">
+    <parent link="DOCKING_PIPE"/>
+    <child  link="TRIROTOR_UNIT"/>
+    <origin xyz="-0.045 0 0.083" rpy="0 -0 0 "/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
 
   <joint name="LARM_JOINT0" type="continuous">
     <parent link="BASE_LINK"/>

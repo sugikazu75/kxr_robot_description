@@ -31,11 +31,11 @@ rleg:
 # end-coords 
 #
 rleg-end-coords:
-  translate : [-0.021, 0.0, -0.026]
+  translate : [-0.020, -0.0355, -0.0425]
   rotate : [0, 1, 0, 0]
   parent : RLEG_LINK2
 lleg-end-coords:
-  translate : [-0.021, 0.0, -0.026]
+  translate : [-0.020, 0.0355, -0.0425]
   rotate : [0, 1, 0, 0]
   parent : LLEG_LINK2
 rarm-end-coords:

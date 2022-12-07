@@ -5,18 +5,18 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr_2.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr_2.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri_khr.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
       <mass value="1.7" />
-      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <origin xyz="-0.07499 0 0.01909" rpy="0 -0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
   </link>

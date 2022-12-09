@@ -44,7 +44,7 @@
     </inertial>
   </link>
 
-  <link name="TRIROTOR_UNIT">
+  <link name="FLIGHT_UNIT">
     <visual>
       <origin xyz="0.0905 0 0.120" rpy="0 -0 0"/>
       <geometry>
@@ -537,9 +537,9 @@
     <origin xyz="-0.0565 0 0.040" rpy="0 -0 0 "/>
   </joint>
 
-  <joint name="TRIROTOR_UNIT_JOINT" type="fixed">
+  <joint name="FLIGHT_UNIT_JOINT" type="fixed">
     <parent link="DOCKING_PIPE"/>
-    <child  link="TRIROTOR_UNIT"/>
+    <child  link="FLIGHT_UNIT"/>
     <origin xyz="-0.045 0 0.083" rpy="0 -0 0 "/>
   </joint>
 

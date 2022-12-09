@@ -21,7 +21,7 @@
     </inertial>
   </link>
 
-  <link name="BIROTOR_UNIT">
+  <link name="FLIGHT_UNIT">
     <visual>
       <origin xyz="-0.0155 0 0.005" rpy="0 -0 0"/>
       <geometry>
@@ -508,9 +508,9 @@
     <dynamics damping="0.2" friction="0" />
   </joint>
 
-  <joint name="BIROTOR_UNIT_JOINT" type="fixed">
+  <joint name="FLIGHT_UNIT_JOINT" type="fixed">
     <parent link="BASE_LINK"/>
-    <child  link="BIROTOR_UNIT"/>
+    <child  link="FLIGHT_UNIT"/>
     <origin xyz="-0.0565 0 0.040" rpy="0 -0 0 "/>
   </joint>
 

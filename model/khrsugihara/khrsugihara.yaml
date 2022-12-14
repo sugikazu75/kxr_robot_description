@@ -3,6 +3,7 @@
 #
 head:
  - HEAD_JOINT0 : head-neck-y
+ - HEAD_JOINT1 : head-neck-p
 larm:
  - LARM_JOINT0 : larm-shoulder-p
  - LARM_JOINT1 : larm-shoulder-r
@@ -47,20 +48,20 @@ larm-end-coords:
   rotate : [0, 1, 0, 90.0]
   parent : LARM_LINK4
 head-end-coords:
-  translate : [0.0, 0.0, 0.048]
-  rotate : [-0.57735, 0.57735, -0.57735, 120]
-  parent : HEAD_LINK0
+  translate : [0.0, 0.0, 0.0315]
+  rotate : [0 , 1, 0, 0]
+  parent : HEAD_LINK1
 
 angle-vector:
      reset-pose: [
-             0.0, ## :head
+             0.0, 0.0, ## :head
              -30.0, 15.0,  0.0, -120.0, 0.0, ## :larm
              -30.0, -15.0, 0.0, -120.0, 0.0, ## :rarm
              0.0, -50.0, 25.0, 0.0, 0.0, ## :lleg
   	     0.0, -50.0, 25.0, 0.0, 0.0, ## :rleg
              ]
      neutral: [
-             0.0, ## :head
+             0.0, 0.0, ## :head
              0.0, 0.0, 0.0, 0.0, 0.0, ## :larm
              0.0, 0.0, 0.0, 0.0, 0.0, ## :rarm
 	     0.0, 0.0, 0.0, 0.0, 0.0, ## :lleg

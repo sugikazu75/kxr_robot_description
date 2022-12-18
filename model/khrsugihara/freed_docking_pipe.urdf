@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<robot name="khrsugihara"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+  <link name="DOCKING_PIPE">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_parallel.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/combining_pipe_mount_khr_parallel.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+
+  <link name="DOCKING_HAND">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/cam_hand_v6.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/cam_hand_v6.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+
+  <link name="FLIGHT_UNIT">
+    <visual>
+      <origin xyz="0.0905 0 0.025" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0905 0 0.025" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/kxr_flight_unit_tri.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="DOCKING_JOINT" type="continuous">
+    <parent link="DOCKING_PIPE"/>
+    <child  link="DOCKING_HAND"/>
+    <origin xyz="-0.06752 0 -0.0164" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <joint name="FLIGHT_UNIT_JOINT" type="continuous">
+    <parent link="DOCKING_HAND"/>
+    <child  link="FLIGHT_UNIT"/>
+    <origin xyz="0 0 0.08104" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+</robot>

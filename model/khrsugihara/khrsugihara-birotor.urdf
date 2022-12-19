@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot name="khrsugihara"
        xmlns:xi="http://www.w3.org/2001/XInclude">
+
   <link name="BASE_LINK">
     <visual>
       <origin xyz="0.0028 0 0.31981" rpy="0 -0 0"/>
@@ -236,6 +237,9 @@
     </inertial>
   </link>
 
+  <link name="LARM_DUMMY_LINK">
+  </link>
+
   <link name="LLEG_LINK0">
     <visual>
       <origin xyz="0.0185 0.017 -0.06265" rpy="0 -0 0"/>
@@ -465,6 +469,9 @@
     </inertial>
   </link>
 
+  <link name="RARM_DUMMY_LINK">
+  </link>
+
   <link name="RLEG_LINK0">
     <visual>
       <origin xyz="0.0185 -0.017 -0.06265" rpy="0 -0 0"/>
@@ -652,6 +659,15 @@
     <dynamics damping="0.2" friction="0" />
   </joint>
 
+  <joint name="LARM_DUMMY" type="continuous">
+    <parent link="LARM_LINK3"/>
+    <child  link="LARM_DUMMY_LINK"/>
+    <origin xyz="0 0.045 -0.12" rpy="1.5693386615608387 1.0707957464058213 1.5691353259370653"/>
+    <axis   xyz="-1 1.09536e-16 5.47679e-17"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
   <joint name="LLEG_JOINT0" type="continuous">
     <parent link="BASE_LINK"/>
     <child  link="LLEG_LINK0"/>
@@ -747,6 +763,15 @@
     <child  link="RARM_LINK5"/>
     <origin xyz="0 -0.02 -0.099" rpy="0 -0 0 "/>
     <axis   xyz="1 -1.29289e-17 -5.47679e-17"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <joint name="RARM_DUMMY" type="continuous">
+    <parent link="RARM_LINK3"/>
+    <child  link="RARM_DUMMY_LINK"/>
+    <origin xyz="0 -0.045 -0.12" rpy="-1.5693386615608387 1.0707957464058213 -1.5691353259370653"/>
+    <axis   xyz="-1 1.09536e-16 5.47679e-17"/>
     <limit lower="-3.14159" upper="3.14159" effort="100" velocity="0.5" />
     <dynamics damping="0.2" friction="0" />
   </joint>

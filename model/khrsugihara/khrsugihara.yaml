@@ -40,13 +40,13 @@ lleg-end-coords:
   rotate : [0, 1, 0, 0]
   parent : LLEG_LINK2
 rarm-end-coords:
-  translate : [0.0, 0.0, -0.032]
-  rotate : [0, 1, 0, 90.0]
-  parent : RARM_LINK4
+  translate : [0.0, 0.0, 0.0]
+  rotate : [0, 1, 0, 0]
+  parent : RARM_DUMMY_LINK
 larm-end-coords:
-  translate : [0.0, 0.0, -0.032]
-  rotate : [0, 1, 0, 90.0]
-  parent : LARM_LINK4
+  translate : [0.0, 0.0, 0.0]
+  rotate : [0, 1, 0, 0]
+  parent : LARM_DUMMY_LINK
 head-end-coords:
   translate : [0.0, 0.0, 0.0315]
   rotate : [0 , 1, 0, 0]

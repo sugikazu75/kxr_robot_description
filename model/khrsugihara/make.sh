@@ -15,5 +15,8 @@ rosrun euscollada collada2eus khrsugihara-birotor.dae khrsugihara.yaml khrsugiha
 rosrun collada_urdf urdf_to_collada khrsugihara-tri-free.urdf khrsugihara-tri-free.dae
 rosrun euscollada collada2eus khrsugihara-tri-free.dae khrsugihara.yaml khrsugihara-tri-free.l
 
+rosrun collada_urdf urdf_to_collada khrsugihara_yaw_lock_joint.urdf khrsugihara_yaw_lock_joint.dae
+rosrun euscollada collada2eus khrsugihara_yaw_lock_joint.dae khrsugihara_yaw.yaml khrsugihara_yaw.l
+
 mv *.dae build
 mv *.l build

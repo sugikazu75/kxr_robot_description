@@ -1,0 +1,71 @@
+#
+# this file is created by hand
+#
+head:
+ - HEAD_JOINT0 : head-neck-y
+ - HEAD_JOINT1 : head-neck-p
+larm:
+ - LARM_JOINT0 : larm-shoulder-p
+ - LARM_JOINT1 : larm-shoulder-r
+ - LARM_JOINT2 : larm-shoulder-y
+ - LARM_JOINT3 : larm-elbow-p
+ - LARM_JOINT4 : larm-gripper-r
+rarm:
+ - RARM_JOINT0 : rarm-shoulder-p
+ - RARM_JOINT1 : rarm-shoulder-r
+ - RARM_JOINT2 : rarm-shoulder-y
+ - RARM_JOINT3 : rarm-elbow-p
+ - RARM_JOINT4 : rarm-gripper-r
+lleg:
+ - LLEG_JOINT_YAW : lleg-crotch-y
+ - LLEG_JOINT0 : lleg-crotch-r
+ - LLEG_JOINT1 : lleg-crotch-p
+ - LLEG_JOINT2 : lleg-knee-p
+ - LLEG_JOINT3 : lleg-wheel1-p
+ - LLEG_JOINT4 : lleg-wheel2-p
+rleg:
+ - RLEG_JOINT_YAW : rleg-crotch-y
+ - RLEG_JOINT0 : rleg-crotch-r
+ - RLEG_JOINT1 : rleg-crotch-p
+ - RLEG_JOINT2 : rleg-knee-p
+ - RLEG_JOINT3 : rleg-wheel1-p
+ - RLEG_JOINT4 : rleg-wheel2-p
+#
+# end-coords 
+#
+rleg-end-coords:
+  translate : [-0.020, -0.0355, -0.0425]
+  rotate : [0, 1, 0, 0]
+  parent : RLEG_LINK2
+lleg-end-coords:
+  translate : [-0.020, 0.0355, -0.0425]
+  rotate : [0, 1, 0, 0]
+  parent : LLEG_LINK2
+rarm-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [0, 1, 0, 0]
+  parent : RARM_DUMMY_LINK
+larm-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [0, 1, 0, 0]
+  parent : LARM_DUMMY_LINK
+head-end-coords:
+  translate : [0.0, 0.0, 0.0315]
+  rotate : [0 , 1, 0, 0]
+  parent : HEAD_LINK1
+
+angle-vector:
+     reset-pose: [
+             0.0, 10.0, ## :head
+             -30.0, 15.0,  0.0, -120.0, 0.0, ## :larm
+             -30.0, -15.0, 0.0, -120.0, 0.0, ## :rarm
+             0.0, 0.0, -50.0, 25.0, 0.0, 0.0, ## :lleg
+  	     0.0, 0.0, -50.0, 25.0, 0.0, 0.0, ## :rleg
+             ]
+     neutral: [
+             0.0, 0.0, ## :head
+             0.0, 0.0, 0.0, 0.0, 0.0, ## :larm
+             0.0, 0.0, 0.0, 0.0, 0.0, ## :rarm
+	     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ## :lleg
+             0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ## :rleg
+             ]

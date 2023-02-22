@@ -4,15 +4,19 @@
   <version>0.0.0</version>
   <description>The kxr_robot_description package</description>
 
-  <maintainer email="sugihara@jsk.imi.i.u-tokyo.ac.jp">sugihara</maintainer>
+  <maintainer email="sugihara@jsk.imi.i.u-tokyo.ac.jp">Kazuki Sugihara</maintainer>
 
   <license>TODO</license>
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>collada_urdf</exec_depend>
+  <exec_depend>euscollada</exec_depend>
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>liburdfdom-tools</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>roseus</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>xacro</exec_depend>
 

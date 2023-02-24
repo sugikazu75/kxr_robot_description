@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<robot name="kxr_flight_unit_tri" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="side" value="0.5" />
+
+  <link name="BASE_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/kxr_flight_trirotor_base_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/kxr_flight_trirotor_base_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.037" />
+      <origin xyz="-0.084 0 0.011" rpy="0 -0 0"/>
+      <inertia ixx="0.004606" ixy="0" ixz="0" iyy="0.005835" iyz="0" izz="0.009403"/>
+    </inertial>
+  </link>
+
+  <link name="thrust0_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.228" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000352" ixy="0" ixz="0" iyy="0.000210" iyz="0" izz="0.000424"/>
+    </inertial>
+  </link>
+
+  <link name="thrust1_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 ${pi}"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 ${pi}"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.228" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000352" ixy="0" ixz="0" iyy="0.000210" iyz="0" izz="0.000424"/>
+    </inertial>
+  </link>
+
+  <link name="thrust2_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 ${pi/2}"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 ${pi/2}"/>
+      <geometry>
+        <mesh filename="package://kxr_robot_description/model/kxr_flight_unit_tri/mesh/real/thrust_link.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.228" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000352" ixy="0" ixz="0" iyy="0.000210" iyz="0" izz="0.000424"/>
+    </inertial>
+  </link>
+
+  <joint name="thrust0-p" type="revolute">
+    <parent link="BASE_LINK"/>
+    <child  link="thrust0_link"/>
+    <origin xyz="0.0 0.2375 0.051" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <joint name="thrust1-p" type="revolute">
+    <parent link="BASE_LINK"/>
+    <child  link="thrust1_link"/>
+    <origin xyz="0.0 -0.2375 0.051" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <joint name="thrust2-p" type="revolute">
+    <parent link="BASE_LINK"/>
+    <child  link="thrust2_link"/>
+    <origin xyz="-0.2975 0 0.051" rpy="0 -0 0 "/>
+    <axis   xyz="-1 0 0"/>
+    <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+</robot>

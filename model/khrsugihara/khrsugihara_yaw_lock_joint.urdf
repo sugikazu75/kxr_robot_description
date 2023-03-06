@@ -357,8 +357,8 @@
       <geometry>
         <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/wheel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="white">
-        <color rgba="1.0 1.0 1.0 1.0"/>
+      <material name="black">
+        <color rgba=".0 .0 .0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -380,8 +380,8 @@
       <geometry>
         <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/wheel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="white">
-        <color rgba="1.0 1.0 1.0 1.0"/>
+      <material name="black">
+        <color rgba=".0 .0 .0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -593,8 +593,8 @@
       <geometry>
         <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/wheel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="white">
-        <color rgba="1 1 1 1"/>
+      <material name="black">
+        <color rgba=".0 .0 .0 1.0"/>
       </material>
     </visual>
     <collision>
@@ -616,8 +616,8 @@
       <geometry>
         <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/real/wheel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="white">
-        <color rgba="1 1 1 1"/>
+      <material name="black">
+        <color rgba=".0 .0 .0 1.0"/>
       </material>
     </visual>
     <collision>

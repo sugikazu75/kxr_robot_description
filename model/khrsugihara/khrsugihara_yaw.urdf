@@ -8,13 +8,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.0028 0 0.31981"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/bodyset93922848311048_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/bodyset93922848311048_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.0028 0 0.31981"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/bodyset93922848311048_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/bodyset93922848311048_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -75,13 +75,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.0115 0.049 0.0474"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.0115 0.049 0.0474"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -94,13 +94,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.01975 0.0255 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.01975 0.0255 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -113,13 +113,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="-0.016 0 -0.075"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK2_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK2_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="-0.016 0 -0.075"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK2_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK2_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -132,13 +132,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.005 -0.02 -0.0135"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK3_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK3_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.005 -0.02 -0.0135"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK3_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK3_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -151,13 +151,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0 0.041 -0.0885"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK4_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK4_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0 0.041 -0.0885"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK4_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK4_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -170,13 +170,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0 0.02 -0.099"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK5_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK5_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0 0.02 -0.099"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK5_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LARM_LINK5_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -193,13 +193,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.0185 0.017 -0.06265"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.0185 0.017 -0.06265"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -212,13 +212,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="-0.021 -0.00825 -0.0385"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="-0.021 -0.00825 -0.0385"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/LLEG_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -297,13 +297,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.0115 -0.049 0.0474"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.0115 -0.049 0.0474"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -316,13 +316,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.01975 -0.0255 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.01975 -0.0255 0"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -335,13 +335,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="-0.016 0 -0.075"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK2_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK2_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="-0.016 0 -0.075"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK2_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK2_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -354,13 +354,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.005 0.02 -0.0135"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK3_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK3_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.005 0.02 -0.0135"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK3_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK3_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -373,13 +373,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0 -0.041 -0.0885"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK4_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK4_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0 -0.041 -0.0885"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK4_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK4_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -392,13 +392,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0 -0.02 -0.099"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK5_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK5_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0 -0.02 -0.099"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK5_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RARM_LINK5_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -415,13 +415,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="0.0185 -0.017 -0.06265"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="0.0185 -0.017 -0.06265"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK0_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK0_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
@@ -434,13 +434,13 @@
     <visual>
       <origin rpy="0 -0 0" xyz="-0.021 0.00825 -0.0385"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0 0" xyz="-0.021 0.00825 -0.0385"/>
       <geometry>
-        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK1_mesh.dae" scale="1 1 1"/>
+        <mesh filename="package://kxr_robot_description/model/khrsugihara/mesh/simple/RLEG_LINK1_mesh.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
